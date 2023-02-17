@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: white;
 }
 
 .App-logo {
@@ -35,4 +36,163 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App a {
+  color: white;
+}
+
+/* left nav*/
+.spotify-logo {
+  fill: white;
+  height: 50px;
+  opacity: 1;
+}
+
+.nav-item:hover svg {
+  fill: white;
+  opacity: 1;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #535353;
+}
+
+.square {
+  background-color: var(--grey-color);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 2px;
+}
+
+.square:hover {
+  background-color: white;
+}
+
+.square-liked {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    345deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(34, 160, 162, 1) 7%,
+    rgba(68, 60, 209, 1) 21%,
+    rgba(142, 3, 217, 1) 67%
+  );
+}
+
+.square-liked i {
+  color: white;
+  scale: 0.8;
+}
+
+#navbar-playlist {
+  overflow-y: auto;
+  position: relative;
+  left: -10%;
+}
+
+#navbar-playlist a {
+  color: var(--grey-color);
+  text-decoration: none;
+}
+
+.fixed-top {
+  z-index: 1;
+}
+
+#nav-left {
+  height: 100vh;
+  width: 15%;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: black;
+}
+
+#navbar-playlist {
+  color: var(--grey-color);
+  list-style: none;
+}
+
+#navbar-playlist li:hover {
+  color: white;
+}
+
+#nav-left span {
+  color: var(--grey-color);
+}
+
+#nav-left span:hover {
+  color: white;
+}
+
+#nav-left .nav-item:hover span {
+  color: white;
+}
+
+.main {
+  color: black;
+  background-color: #61dafb;
+  width: 85%;
+}
+
+.main-container {
+  display: flex;
+}
+
+.top-bar {
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 15px 25px;
+  position: sticky;
+  top: 0;
+  color: white;
+}
+
+.icon {
+  color: white;
+}
+
+.good-morning-container {
+  background-color: rgb(221, 0, 221);
+  text-align: left;
+}
+
+.good-morning-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 2rem;
+}
+
+.good-morning-card {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.player {
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
+}
+
+.player-album-info {
+  display: flex;
+  height: 5rem;
 }
