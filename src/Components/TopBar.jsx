@@ -2,15 +2,16 @@ import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io";
+import SearchBar from "./SearchBar";
 
 const TopBar = () => {
   return (
     <div className="top-bar">
-      <div className="icon">
-        <IoIosArrowDropleftCircle />
-        <IoIosArrowDroprightCircle />
+      <div className="icons">
+        <IoIosArrowDropleftCircle className="icon" />
+        <IoIosArrowDroprightCircle className="icon" />
       </div>
-      <div>Searchbar</div>
+      <SearchBar />
       <div>Account Info</div>
     </div>
   );

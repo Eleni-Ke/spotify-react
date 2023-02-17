@@ -1,3 +1,6 @@
+import { FiHeart } from "react-icons/fi";
+import { BiRectangle } from "react-icons/bi";
+
 const Player = () => {
   return (
     <div className="player">
@@ -7,7 +10,10 @@ const Player = () => {
           Song Title <br />
           Artist
         </p>
-        <div>icon1 and icon2</div>
+        <div>
+          <FiHeart className="song-icon" />
+          <BiRectangle className="song-icon" />
+        </div>
       </div>
       <div className="player-middle-buttons">
         This is the middle section of the player. It has buttons and stuff...

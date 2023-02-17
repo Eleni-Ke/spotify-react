@@ -47,31 +47,13 @@
   fill: white;
   height: 50px;
   opacity: 1;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
 }
 
-.nav-item:hover svg {
-  fill: white;
-  opacity: 1;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  background: #535353;
-}
-
-.square {
-  background-color: var(--grey-color);
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  border-radius: 2px;
-}
-
-.square:hover {
-  background-color: white;
+.nav-pills.nav {
+  margin-bottom: 2rem;
 }
 
 .square-liked {
@@ -91,60 +73,56 @@
   );
 }
 
-.square-liked i {
-  color: white;
-  scale: 0.8;
+.nav-left {
+  height: 100vh;
+  width: 300px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  text-align: left;
 }
 
-#navbar-playlist {
-  overflow-y: auto;
-  position: relative;
-  left: -10%;
-}
-
-#navbar-playlist a {
+li {
   color: var(--grey-color);
+  list-style: none;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+li a {
   text-decoration: none;
 }
 
-.fixed-top {
-  z-index: 1;
+li svg {
+  margin-right: 1rem;
+  font-size: 2rem;
 }
 
-#nav-left {
-  height: 100vh;
-  width: 15%;
-  position: sticky;
-  top: 0;
-  z-index: 3;
-  background-color: black;
+.nav-link {
+  display: flex;
 }
 
-#navbar-playlist {
-  color: var(--grey-color);
-  list-style: none;
+.nav-link .square {
+  margin-right: 1.4rem;
+  background-color: gray;
+  color: black;
+  width: 1.7rem;
+  height: 1.7rem;
+  text-align: center;
 }
 
-#navbar-playlist li:hover {
-  color: white;
+.navbar-playlist {
+  border-top: 1px solid gray;
+  padding-top: 2rem;
 }
 
-#nav-left span {
-  color: var(--grey-color);
-}
-
-#nav-left span:hover {
-  color: white;
-}
-
-#nav-left .nav-item:hover span {
-  color: white;
-}
+/* main */
 
 .main {
   color: black;
   background-color: #61dafb;
-  width: 85%;
+  width: 100%;
 }
 
 .main-container {
@@ -152,7 +130,7 @@
 }
 
 .top-bar {
-  background-color: #181818;
+  background-color: #1b1064;
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
@@ -164,6 +142,8 @@
 
 .icon {
   color: white;
+  margin-right: 2rem;
+  font-size: 3rem;
 }
 
 .good-morning-container {
@@ -182,6 +162,8 @@
   margin-bottom: 1rem;
 }
 
+/* player */
+
 .player {
   background-color: #181818;
   display: flex;
@@ -194,5 +176,17 @@
 
 .player-album-info {
   display: flex;
-  height: 5rem;
+  height: 8rem;
+  align-items: center;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.player-album-info .song-icon {
+  margin-left: 1.2rem;
+}
+
+.player-album-info img {
+  margin: 1.8rem;
+  height: 4.5rem;
 }

@@ -1,14 +1,13 @@
+import { BsHouseDoorFill, BsSearch } from "react-icons/bs";
+import { VscLibrary } from "react-icons/vsc";
+
 const SideBar = () => {
   return (
-    <div
-      id="nav-left"
-      className=" d-flex flex-column flex-shrink-0 p-3 text-white"
-    >
+    <div className="nav-left d-flex flex-column flex-shrink-0 p-3 text-white">
       <a draggable="false" className="text-white" href="/" aria-current="page">
         <svg
-          className="spotify-logo"
+          className="spotify-logo fwTMCeAaUoWDj9WcQbgy"
           viewBox="0 0 1134 340"
-          className="fwTMCeAaUoWDj9WcQbgy"
         >
           <title>Spotify</title>
           <path
@@ -17,7 +16,6 @@ const SideBar = () => {
           ></path>
         </svg>
       </a>
-      <hr />
       <ul className="nav nav-pills flex-column mb-2">
         <li className="nav-item">
           <a
@@ -25,52 +23,19 @@ const SideBar = () => {
             className="nav-link text-white"
             aria-current="page"
           >
-            <svg
-              role="img"
-              className="mr-2"
-              height="24"
-              width="24"
-              aria-hidden="true"
-              className="Svg-sc-ytk21e-0 uPxdw home-active-icon"
-              viewBox="0 0 24 24"
-              data-encore-id="icon"
-            >
-              <path d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 00-1-1.732l-7.5-4.33z"></path>
-            </svg>
+            <BsHouseDoorFill />
             Home
           </a>
         </li>
         <li className="nav-item">
           <a href="search-page.html" className="nav-link text-white">
-            <svg
-              role="img"
-              className="mr-2 nav-image"
-              height="24"
-              width="24"
-              aria-hidden="true"
-              className="Svg-sc-ytk21e-0 uPxdw search-icon"
-              viewBox="0 0 24 24"
-              data-encore-id="icon"
-            >
-              <path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path>
-            </svg>
+            <BsSearch />
             <span className="text">Search</span>
           </a>
         </li>
         <li className="nav-item">
           <a href="/" className="nav-link text-white">
-            <svg
-              role="img"
-              className="mr-2"
-              height="24"
-              width="24"
-              aria-hidden="true"
-              className="Svg-sc-ytk21e-0 uPxdw collection-icon"
-              viewBox="0 0 24 24"
-              data-encore-id="icon"
-            >
-              <path d="M14.5 2.134a1 1 0 011 0l6 3.464a1 1 0 01.5.866V21a1 1 0 01-1 1h-6a1 1 0 01-1-1V3a1 1 0 01.5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zm6 0a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1z"></path>
-            </svg>
+            <VscLibrary />
             <span>Your Library</span>
           </a>
         </li>
@@ -88,23 +53,22 @@ const SideBar = () => {
         </li>
         <li className="nav-item">
           <a href="/" className="nav-link text-white d-flex align-items-center">
-            <div className="square-liked songs mr-2">
+            <div className="square-liked square songs mr-2">
               <i className="bi bi-heart-fill"></i>
             </div>
             <span className="text-highlight">Liked songs</span>
           </a>
         </li>
       </ul>
-      <hr />
-      <ul id="navbar-playlist">
+      <ul className="navbar-playlist">
         <a href="album-page.html?id=1132644">
-          <li className="mt-1">Eleni's Favourite</li>
+          <li className="mt-1">Playlist 1</li>
         </a>
         <a href="album-page.html?id=53227232">
-          <li className="mt-1">Piotr's Favourite</li>
+          <li className="mt-1">Playlist 2</li>
         </a>
         <a href="album-page.html?id=121439">
-          <li className="mt-1">Zaide's Favourite</li>
+          <li className="mt-1">Playlist 3</li>
         </a>
       </ul>
       <div className="nav-item mb-5 pb-4">
