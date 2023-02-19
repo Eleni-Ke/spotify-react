@@ -1,3 +1,4 @@
+import Favourite from "./Favourite";
 import ForYou from "./ForYou";
 import GoodMorning from "./GoodMorning";
 import TopBar from "./TopBar";
@@ -7,7 +8,7 @@ const Main = () => {
     <div className="main">
       <TopBar />
       <GoodMorning />
-      <ForYou />
+      <Favourite />
     </div>
   );
 };
