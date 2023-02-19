@@ -13,7 +13,7 @@ const playlistReducer = (state = initialState, action) => {
     case REMOVE_FROM_PLAYLIST:
       return {
         ...state,
-        content: state.content.filter((el, i) => i !== action.payload),
+        content: state.content.filter((el, i) => el !== action.payload),
       };
     default:
       return state;

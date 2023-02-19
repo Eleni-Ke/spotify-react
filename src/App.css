@@ -150,11 +150,6 @@ li svg {
   text-align: left;
   margin-bottom: 10rem;
 }
-.good-morning-container h2 {
-  margin-left: 2rem;
-  font-size: 2.7rem;
-  color: white;
-}
 
 .good-morning-row {
   display: flex;
@@ -168,7 +163,7 @@ li svg {
   margin-right: 2rem;
   background-color: #252525;
   align-items: center;
-  min-width: 30rem;
+  width: 45rem;
   font-size: 1.5rem;
   border-radius: 8px;
   overflow: hidden;
@@ -180,30 +175,48 @@ li svg {
   margin-right: 1.5rem;
 }
 
-.search-result-container {
+.search-result-container,
+.favourite-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.search-result-container .card {
+.search-result-container .card,
+.favourite-container .card {
   display: flex;
-  width: 20rem;
+  width: 30rem;
   background-color: #2d2c2c;
   margin-bottom: 1rem;
+  margin-right: 0.5rem;
   text-align: left;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
-.search-result-container .card-body {
+.search-result-container .card-body,
+.favourite-container .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 1rem;
+  margin: 1rem 1rem;
 }
 
 .card-icon {
   font-size: 1.5rem;
   margin-right: 1rem;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 2rem;
+  font-size: 2.7rem;
+  color: white;
+}
+
+.favourite-container {
+  margin-inline: 2rem;
 }
 
 /* player */
