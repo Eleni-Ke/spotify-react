@@ -59,13 +59,7 @@ const SideBar = () => {
       </ul>
       <ul className="navbar-playlist">
         <a href="album-page.html?id=1132644">
-          <li className="mt-1">Playlist 1</li>
-        </a>
-        <a href="album-page.html?id=53227232">
-          <li className="mt-1">Playlist 2</li>
-        </a>
-        <a href="album-page.html?id=121439">
-          <li className="mt-1">Playlist 3</li>
+          <li className="mt-1">Favourites</li>
         </a>
       </ul>
       <div className="nav-item mb-5 pb-4">
