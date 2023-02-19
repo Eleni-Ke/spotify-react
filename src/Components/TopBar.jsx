@@ -2,7 +2,6 @@ import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io";
-import SearchBar from "./SearchBar";
 
 const TopBar = () => {
   return (
@@ -11,7 +10,6 @@ const TopBar = () => {
         <IoIosArrowDropleftCircle className="icon" />
         <IoIosArrowDroprightCircle className="icon" />
       </div>
-      <SearchBar />
       <div>Account Info</div>
     </div>
   );

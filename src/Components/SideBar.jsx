@@ -1,5 +1,6 @@
 import { BsHouseDoorFill, BsSearch } from "react-icons/bs";
 import { VscLibrary } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (
@@ -18,20 +19,16 @@ const SideBar = () => {
       </a>
       <ul className="nav nav-pills flex-column mb-2">
         <li className="nav-item">
-          <a
-            href="homepage.html"
-            className="nav-link text-white"
-            aria-current="page"
-          >
+          <Link to="/" className="nav-link text-white" aria-current="page">
             <BsHouseDoorFill />
             Home
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="search-page.html" className="nav-link text-white">
+          <Link to="/searchResults" className="nav-link text-white">
             <BsSearch />
             <span className="text">Search</span>
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
           <a href="/" className="nav-link text-white">

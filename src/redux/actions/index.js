@@ -24,14 +24,15 @@ export const setUsernameAction = (name) => {
   };
 };
 
-export const getSongsActionAsync = () => {
-  return async (dispatch, getState) => {
+export const getSongsActionAsync = (query) => {
+  return async (dispatch) => {
     try {
       let res = await fetch(
-        "https://striveschool-api.herokuapp.com/api/deezer/search?q=queen"
+        "https://striveschool-api.herokuapp.com/api/deezer/search?q=" + query
       );
       if (res.ok) {
         let fetchedSongs = await res.json();
+        console.log(fetchedSongs);
         dispatch({
           type: GET_SONGS,
           payload: fetchedSongs,
