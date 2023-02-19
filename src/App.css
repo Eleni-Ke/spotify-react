@@ -175,6 +175,14 @@ li svg {
   margin-right: 1.5rem;
 }
 
+.good-morning-card button,
+.search-result-container button {
+  color: white;
+  background-color: #18181800;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
 .search-result-container,
 .favourite-container {
   display: flex;
@@ -217,6 +225,16 @@ h2 {
 
 .favourite-container {
   margin-inline: 2rem;
+}
+
+/* search bar */
+
+.search-bar {
+  font-size: 2rem;
+  text-align: center;
+  padding-right: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 /* player */
